@@ -7,11 +7,26 @@
     <style>
         .input-container {
             display: flex;
-            align-items: safe;
+            align-items: flex-end;
         }
 
         .input-container img {
-            margin-right: 10px; /* Adjust this value as needed */
+            margin-right: 10px;
+            align-self: flex-end;
+        }
+
+        .input-container input {
+            margin-bottom: 0; margin-right: 10px;
+        }
+
+        
+        .input-container:nth-child(2) {
+            justify-content: flex-end; 
+        }
+
+        .input-container:nth-child(2) img {
+            margin-left: 10px;
+            margin-right: 0;
         }
     </style>
 </head>
@@ -19,13 +34,13 @@
     <h1>User Login</h1>
     <form>
         <div class="input-container">
-            <img src="icons8-user-96.png" alt="" width="60">
+            <img src="icons8-user-96.png" alt="" width="40">
             <input type="text" id="name" name="name" placeholder="Username">
         </div>
         <br> <br>
         <div class="input-container">
-            <img src="icons8-lock-50.png" alt="">
             <input type="password" id="password" name="password" placeholder="Enter Your Password">
+            <img src="icons8-lock-50.png" alt="" width="40">
         </div>
         <br>
         <br>
